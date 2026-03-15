@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: english-wordnet
+    env: static
+    repo: https://github.com/YOURUSERNAME/english-wordnet  # Replace with your fork URL
+    branch: main
+    plan: free
+    buildCommand: ""  # No build needed for static files
+    publishPath: /  # Serve all files from root (DB and dict/ accessible via URLs)
+
